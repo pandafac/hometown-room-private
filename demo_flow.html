@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo 2.0 → 5.0 流程图</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-width: 1480px;
+      background: #f5f7f6;
+      color: #172334;
+      font-family: "Microsoft YaHei UI", "Microsoft YaHei", "DengXian", sans-serif;
+    }
+
+    .canvas {
+      width: 1480px;
+      min-height: 820px;
+      margin: 0 auto;
+      padding: 48px 56px 42px;
+    }
+
+    header {
+      margin-bottom: 34px;
+    }
+
+    .kicker {
+      margin: 0 0 10px;
+      color: #316b88;
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 42px;
+      line-height: 1.2;
+      letter-spacing: -0.035em;
+    }
+
+    .subtitle {
+      margin: 10px 0 0;
+      color: #5f6b7a;
+      font-size: 17px;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: 190px 42px 330px 42px 310px 42px 330px 42px 200px;
+      align-items: stretch;
+      min-height: 560px;
+    }
+
+    .arrow {
+      align-self: center;
+      height: 22px;
+      position: relative;
+    }
+
+    .arrow::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 2px;
+      right: 5px;
+      height: 2px;
+      background: #9aa7b3;
+    }
+
+    .arrow::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 1px;
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid #9aa7b3;
+      border-right: 2px solid #9aa7b3;
+      transform: rotate(45deg);
+    }
+
+    .node {
+      border: 2px solid #172334;
+      background: #172334;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .node .version {
+      font-family: Bahnschrift, "Cascadia Mono", monospace;
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .node .label {
+      margin-top: 10px;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .node .note {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,.2);
+      color: rgba(255,255,255,.78);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .node.finish {
+      border-color: #1d6b54;
+      background: #1d6b54;
+    }
+
+    .group {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      justify-content: center;
+    }
+
+    .group-title {
+      margin: 0 0 -2px;
+      color: #687584;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+
+    .card {
+      border: 1px solid #cbd4d8;
+      background: #fff;
+      padding: 19px 19px 17px;
+      min-height: 0;
+    }
+
+    .card.visual { border-top: 4px solid #316b88; }
+    .card.bug { border-top: 4px solid #a0443d; }
+    .card.qa { border-top: 4px solid #a66a20; }
+    .card.ppt { border-top: 4px solid #1d6b54; }
+
+    h3 {
+      margin: 0;
+      font-size: 19px;
+      line-height: 1.35;
+    }
+
+    .card p {
+      margin: 7px 0 0;
+      color: #667383;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .people {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 12px;
+    }
+
+    .people span {
+      padding: 4px 8px;
+      border: 1px solid #d4dcdf;
+      background: #f7f9f8;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .merge {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .result {
+      border: 1px solid #cbd4d8;
+      padding: 15px 17px;
+      background: #fff;
+    }
+
+    .result .tag {
+      color: #687584;
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+
+    .result strong {
+      display: block;
+      margin-top: 5px;
+      font-size: 18px;
+    }
+
+    .result small {
+      display: block;
+      margin-top: 5px;
+      color: #667383;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .result.visual { background: #edf4f8; }
+    .result.bug { background: #faf0ef; }
+
+    .demo4 {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 12px;
+      border: 2px solid #172334;
+      background: #172334;
+      color: #fff;
+      padding: 18px;
+    }
+
+    .demo4 .version {
+      font-family: Bahnschrift, "Cascadia Mono", monospace;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .demo4 small {
+      display: block;
+      margin-top: 6px;
+      color: rgba(255,255,255,.72);
+      font-size: 12px;
+    }
+
+    .demo4 .owner {
+      border: 1px solid rgba(255,255,255,.35);
+      padding: 5px 9px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .gate {
+      margin-top: 26px;
+      padding: 15px 18px;
+      border: 1px solid #d8c7ab;
+      background: #fbf3e8;
+      color: #7e551e;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .gate strong { color: #5d3e15; }
+
+    @media (max-width: 1480px) {
+      body { min-width: 0; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <header>
+      <p class="kicker">DEMO ITERATION · SIMPLE FLOW</p>
+      <h1>Demo 2.0 → Demo 5.0 协作流程</h1>
+      <p class="subtitle">先并行排查，再汇总到 Demo 4.0；终检与 PPT 同步后，进入 Demo 5.0 视频生成。</p>
+    </header>
+
+    <div class="flow">
+      <section class="node start">
+        <div class="version">Demo 2.0</div>
+        <div class="label">迭代起点</div>
+        <div class="note">视觉优化与产品 Bug 检索同时启动。</div>
+      </section>
+
+      <div class="arrow" aria-hidden="true"></div>
+
+      <section class="group parallel">
+        <p class="group-title">第一轮 · 并行</p>
+        <article class="card visual">
+          <h3>视觉优化</h3>
+          <p>升级视觉，同时确认原有功能不受影响。</p>
+          <div class="people"><span>杨帅 Shawn</span><span>O7</span></div>
+        </article>
+        <article class="card bug">
+          <h3>产品 Bug 检索</h3>
+          <p>输出问题截图和文字说明。</p>
+          <div class="people"><span>Betcha.</span><span>Radiant</span></div>
+        </article>
+      </section>
+
+      <div class="arrow" aria-hidden="true"></div>
+
+      <section class="merge">
+        <p class="group-title">结果汇合</p>
+        <div class="result visual">
+          <span class="tag">视觉线</span>
+          <strong>Demo 3.0</strong>
+          <small>视觉升级完成</small>
+        </div>
+        <div class="result bug">
+          <span class="tag">产品线</span>
+          <strong>Bug 清单完成</strong>
+          <small>检索结束，问题可追踪</small>
+        </div>
+        <div class="demo4">
+          <div>
+            <div class="version">Demo 4.0</div>
+            <small>两条线汇合后汇总产出</small>
+          </div>
+          <span class="owner">我</span>
+        </div>
+      </section>
+
+      <div class="arrow" aria-hidden="true"></div>
+
+      <section class="group final-round">
+        <p class="group-title">第二轮 · 并行</p>
+        <article class="card qa">
+          <h3>最后一轮 Bug 检索</h3>
+          <p>同时检查视觉问题与功能问题。</p>
+          <div class="people"><span>杨帅 Shawn</span><span>O7</span></div>
+        </article>
+        <article class="card ppt">
+          <h3>PPT 同步推进</h3>
+          <p>财务部分只需要简要介绍。</p>
+          <div class="people"><span>Betcha.</span><span>Radiant</span></div>
+        </article>
+      </section>
+
+      <div class="arrow" aria-hidden="true"></div>
+
+      <section class="node finish">
+        <div class="version">Demo 5.0</div>
+        <div class="label">最终交付</div>
+        <div class="note">我负责视频生成。</div>
+      </section>
+    </div>
+
+    <div class="gate">
+      <strong>关键条件：</strong>Demo 4.0 前，视觉升级和 Bug 检索都要完成；Demo 5.0 前，视觉/功能终检和 PPT 要同步收口。
+    </div>
+  </main>
+</body>
+</html>

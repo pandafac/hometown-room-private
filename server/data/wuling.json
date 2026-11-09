@@ -1,0 +1,488 @@
+{
+  "place": {
+    "id": "shiao-town",
+    "name": "石岙镇",
+    "eyebrow": "虚构山乡地方志 01 号",
+    "region": "山野茶路（架空）",
+    "seasonLabel": "十一月 · 山谷早霜",
+    "intro": "一座把早晨留给豆腐、把午后留给茶的小镇。石阶很窄，店铺不多，赶路的人容易走过，慢下来的人会听见磨豆声。",
+    "tone": "清早、朴实、直来直往",
+    "principles": [
+      "先问自己饿不饿，再决定往山上还是往茶铺走。",
+      "山乡小店收摊早，不把营业时间说成全天。",
+      "看完手艺再买东西，不把师傅的工作台当表演。"
+    ],
+    "arrivalTips": [
+      "镇口到半山石阶约 8 分钟，雨后石面湿滑。",
+      "早餐铺通常只到中午，茶铺下午才最从容。",
+      "山里信号不稳，店铺不保证线上支付时时可用。"
+    ],
+    "phrases": [
+      {
+        "phrase": "慢慢走",
+        "pronunciation": "màn màn zǒu",
+        "meaning": "石阶滑，别赶。"
+      },
+      {
+        "phrase": "再来一碗",
+        "pronunciation": "zài lái yī wǎn",
+        "meaning": "想再加一碗热豆浆。"
+      },
+      {
+        "phrase": "坐里头",
+        "pronunciation": "zuò lǐ tou",
+        "meaning": "风大，坐靠里一点。"
+      }
+    ],
+    "tags": ["山乡早市", "半日路线", "手作小店"],
+    "routes": [
+      {
+        "name": "从一口热豆浆开始",
+        "stops": ["半山豆腐坊", "石阶拐角", "松风茶屋"],
+        "duration": "2–3 小时",
+        "note": "先吃早的，再慢慢走到午后。"
+      }
+    ]
+  },
+  "shops": [
+    {
+      "id": "banshan-tofu",
+      "number": "01",
+      "name": "半山豆腐坊",
+      "englishName": "BANSHAN TOFU",
+      "category": "盐卤豆腐 · 热豆浆",
+      "stamp": "豆香",
+      "tagline": "一锅豆花，卖完就收。",
+      "shortDescription": "石阶中段的老豆腐坊。清早最热闹，四张小桌不用拼桌。",
+      "owner": {
+        "name": "郑阿满",
+        "role": "店主",
+        "since": "2009 年",
+        "voice": "讲话快，喜欢提醒人趁热吃。"
+      },
+      "address": "石岙镇石阶路 12 号，老槐树右转第二扇门",
+      "area": "石阶路",
+      "hours": {
+        "display": "周三至周一 06:30–11:30",
+        "closed": "周二磨豆修整；卖完豆花会提前收门",
+        "soloFriendly": "工作日 07:00–08:00 和 10:30 后更容易有空位",
+        "busy": "周末 08:00–09:15 最忙",
+        "note": "只供应早餐与早午市，不供应晚餐"
+      },
+      "story": "郑阿满每天四点半泡豆。石岙的水偏硬，她不用石膏，只用盐卤慢慢点。豆花不老，但也不能一直等；卖完一锅，门口木牌就翻成“收”。",
+      "storyQuote": "“豆花等不得，客人的话倒可以慢慢说。”",
+      "products": [
+        {
+          "name": "咸豆花",
+          "price": 8,
+          "unit": "碗",
+          "note": "榨菜、虾皮、葱花分开询问。",
+          "signature": true
+        },
+        {
+          "name": "热豆浆",
+          "price": 5,
+          "unit": "碗",
+          "note": "无糖，桌上有少量糖罐。"
+        },
+        {
+          "name": "豆腐脑套餐",
+          "price": 15,
+          "unit": "份",
+          "note": "豆花、豆浆和一块米糕。"
+        },
+        {
+          "name": "香煎豆腐",
+          "price": 12,
+          "unit": "份",
+          "note": "10:30 后供应，数量有限。"
+        }
+      ],
+      "signatureChoice": {
+        "soloOrder": "咸豆花 + 热豆浆",
+        "budget": 13,
+        "reason": "一顿刚好的热早餐，不需要一次点太多。",
+        "alternative": "想吃饱一点，选 15 元豆腐脑套餐。"
+      },
+      "solo": {
+        "counterSeats": 4,
+        "seating": "进门左边有四张小桌，一人可以坐靠墙位，不用拼桌。",
+        "bestTime": "工作日 07:00–08:00 或 10:30 后",
+        "comfortNote": "点单在前台，不要先坐下等；端豆花时当心烫。",
+        "avoid": "周末 08:00–09:15 会排队，10:45 后可能卖完。"
+      },
+      "ordering": "进门先在柜台点单并付款，拿木牌找座位；豆花做好后会叫木牌号。",
+      "etiquette": [
+        "豆花趁热吃，不在工作台边久站拍照。",
+        "需要不加虾皮、不加葱要提前说。",
+        "一人高峰时只占一个小桌位。"
+      ],
+      "commonMisunderstandings": [
+        {
+          "claim": "豆花是不是甜的？",
+          "correction": "默认是咸豆花；甜口不常做，需要现场询问当天是否可做。"
+        },
+        {
+          "claim": "中午和晚上也能吃到？",
+          "correction": "不供应晚餐，通常 11:30 前结束，卖完会提前收门。"
+        }
+      ],
+      "ownerQuestions": [
+        "盐卤点豆花最难的是哪一步？",
+        "为什么这里的豆花不做到全天都有？"
+      ],
+      "ownerWillNotAnswer": [
+        "不承诺预留豆花。",
+        "不判断外地豆制品的品质。",
+        "不提供配送服务。"
+      ],
+      "petPolicy": "宠物不入内，可在门外石阶旁等候。",
+      "accessibility": "门口一级台阶，店内地面窄；婴儿车不适合推进。",
+      "payment": "移动支付；高峰期可能只收现金。",
+      "services": {
+        "wifi": null,
+        "power": null,
+        "luggage": null
+      },
+      "faqs": [
+        {
+          "id": "tofu-order",
+          "question": "第一次来怎么点？",
+          "answer": "咸豆花加一碗热豆浆，共 13 元；想吃饱选 15 元豆腐脑套餐。",
+          "source": "店主提供"
+        },
+        {
+          "id": "tofu-time",
+          "question": "什么时候不容易排队？",
+          "answer": "工作日 07:00–08:00 或 10:30 后更从容；周末 08:00–09:15 最忙。",
+          "source": "店主提供"
+        }
+      ],
+      "recommendations": [
+        {
+          "shopId": "songfeng-tea",
+          "reason": "吃完沿石阶往上走约 7 分钟，松风茶屋午后最安静。",
+          "context": "适合不赶时间、想坐一会儿的人。",
+          "source": "店主提供"
+        }
+      ],
+      "testimonials": [
+        {
+          "id": "tofu-review-01",
+          "author": "阿池",
+          "context": "第一次一个人来 · 清早",
+          "quote": "知道一桌一人不用拼，点单顺序也写清楚，进门没那么紧张。",
+          "changedAction": "按套餐点单，坐了 25 分钟。",
+          "simulated": true
+        },
+        {
+          "id": "tofu-review-02",
+          "author": "小满",
+          "context": "周末早市 · 赶时间",
+          "quote": "它提醒我十点四十五后可能卖完，我提前半小时到了。",
+          "changedAction": "调整到 08:00 前到店。",
+          "simulated": true
+        }
+      ],
+      "accent": "noodle",
+      "motif": "豆香与石阶",
+      "liveStatus": {
+        "business": { "state": "closed", "label": "今日已收门" },
+        "crowd": null,
+        "stock": { "state": "soldout", "label": "今日售罄" },
+        "updatedAt": "今天 14:10 更新"
+      },
+      "lastUpdated": "2026-11-06"
+    },
+    {
+      "id": "songfeng-tea",
+      "number": "02",
+      "name": "松风茶屋",
+      "englishName": "SONGFENG TEA",
+      "category": "山茶 · 旧书",
+      "stamp": "松风",
+      "tagline": "窗外有松，桌上有旧书。",
+      "shortDescription": "石阶尽头的两间茶屋。四张靠窗小桌，适合一个人坐着听风。",
+      "owner": {
+        "name": "苏敏",
+        "role": "店主",
+        "since": "2018 年",
+        "voice": "慢，不主动打扰，会替一个人来的客人留窗边。"
+      },
+      "address": "石岙镇石阶路 31 号，松树下的青砖门",
+      "area": "石阶尽头",
+      "hours": {
+        "display": "周四至周一 10:30–17:30",
+        "closed": "周二、周三整理茶与书；雨雪天可能提前收门",
+        "soloFriendly": "工作日 13:00–16:00 最安静",
+        "busy": "周末 14:00–15:30 靠窗位较紧张",
+        "note": "17:00 后不再冲泡新茶"
+      },
+      "story": "苏敏把父亲留下的旧书架搬到窗边。茶屋只放一张长桌和四张小桌，不设茶艺表演。下雨时她把窗开一条缝，让人听见松针上的水。",
+      "storyQuote": "“一个人来，不是需要陪，是需要没人催。”",
+      "products": [
+        {
+          "name": "石岙山茶",
+          "price": 20,
+          "unit": "杯",
+          "note": "焙火轻，能续一次水。",
+          "signature": true
+        },
+        {
+          "name": "炒米糖",
+          "price": 10,
+          "unit": "小碟",
+          "note": "甜口，含花生。"
+        },
+        {
+          "name": "山茶套餐",
+          "price": 32,
+          "unit": "份",
+          "note": "一杯茶、一份炒米糖和一小碟时令果干。"
+        }
+      ],
+      "signatureChoice": {
+        "soloOrder": "石岙山茶 + 炒米糖",
+        "budget": 30,
+        "reason": "一杯茶能续水，配一小碟甜点足够坐一会儿。",
+        "alternative": "赶时间可以只点一杯山茶。"
+      },
+      "solo": {
+        "counterSeats": 0,
+        "seating": "四张小桌都可以一人坐，窗边一桌视野最好。",
+        "bestTime": "周一、周四、周五 13:00–16:00",
+        "comfortNote": "不主动拼桌，一杯茶通常可坐约 75 分钟。",
+        "avoid": "周末 14:00–15:30 窗边位较紧张。"
+      },
+      "ordering": "先在门口茶牌处选茶，向柜台点单并付款；茶会送到座位。",
+      "etiquette": [
+        "旧书可以读，不带走；读后放回原方格。",
+        "可以拍照，但不拍其他客人。",
+        "不提供棋牌和长时间视频通话。"
+      ],
+      "commonMisunderstandings": [
+        {
+          "claim": "需要提前预约吗？",
+          "correction": "普通到店不需要预约；店主不敢承诺固定留位。"
+        },
+        {
+          "claim": "可以带很多朋友来吗？",
+          "correction": "小店空间有限，超过 4 人建议先询问当天是否方便。"
+        }
+      ],
+      "ownerQuestions": [
+        "为什么茶屋不播音乐？",
+        "窗边旧书架里最常被读的是哪一本？"
+      ],
+      "ownerWillNotAnswer": [
+        "不承诺预留靠窗位。",
+        "不评价游客携带的茶叶。",
+        "不在晚上营业。"
+      ],
+      "petPolicy": "宠物不能进入室内，可短时间在门外松树下等候。",
+      "accessibility": "从石阶上来后是一段平地，店内有一道约 8 厘米门槛。",
+      "payment": "移动支付、现金均可。",
+      "services": {
+        "wifi": null,
+        "power": null,
+        "luggage": null
+      },
+      "faqs": [
+        {
+          "id": "songfeng-order",
+          "question": "一个人来点什么？",
+          "answer": "石岙山茶加炒米糖，约 30 元；茶可续一次水。",
+          "source": "店主提供"
+        },
+        {
+          "id": "songfeng-hours",
+          "question": "营业到什么时候？",
+          "answer": "通常 10:30–17:30，周二、周三休；17:00 后不再冲泡新茶。",
+          "source": "店主提供"
+        }
+      ],
+      "recommendations": [
+        {
+          "shopId": "banshan-tofu",
+          "reason": "如果还没吃早餐，可以下山回到半山豆腐坊，10:45 前更稳妥。",
+          "context": "适合想先吃点热食、再开始散步的人。",
+          "source": "店主提供"
+        }
+      ],
+      "testimonials": [
+        {
+          "id": "songfeng-review-01",
+          "author": "白果",
+          "context": "独自来 · 下午",
+          "quote": "它说窗边可以一个人坐、不会被催，我才决定在这里停两个小时。",
+          "changedAction": "选择窗边位，读完一本旧书。",
+          "simulated": true
+        }
+      ],
+      "accent": "tea",
+      "motif": "松针与窗",
+      "liveStatus": {
+        "business": { "state": "open", "label": "营业中" },
+        "crowd": { "state": "full", "label": "靠窗位已满" },
+        "stock": { "state": "partial", "label": "炒米糖售罄" },
+        "updatedAt": "今天 14:10 更新"
+      },
+      "lastUpdated": "2026-11-06"
+    }
+  ],
+  "visitorScenarios": [
+    {
+      "id": "mountain-breakfast",
+      "label": "想先吃口热的",
+      "description": "清早到镇，预算二十元以内，想找一个人也能坐的早餐。",
+      "shopIds": ["banshan-tofu"],
+      "starter": "我刚到石岙镇，想先吃点热的，一个人怎么安排？"
+    },
+    {
+      "id": "mountain-quiet",
+      "label": "想安静坐一会儿",
+      "description": "不想被打扰，希望有窗、有茶，可以读书。",
+      "shopIds": ["songfeng-tea"],
+      "starter": "我想安静坐一会儿，哪里适合一个人待着？"
+    },
+    {
+      "id": "mountain-route",
+      "label": "只有半天",
+      "description": "想从早餐走到午后茶，路线不要太赶。",
+      "shopIds": ["banshan-tofu", "songfeng-tea"],
+      "starter": "我在石岙镇只有半天，想先吃热的再去喝茶，怎么安排？"
+    },
+    {
+      "id": "mountain-rain",
+      "label": "下雨路滑",
+      "description": "想确认石阶、鞋子和店内落脚是否方便。",
+      "shopIds": ["banshan-tofu", "songfeng-tea"],
+      "starter": "今天下雨，石阶好走吗？哪家店更适合先落脚？"
+    },
+    {
+      "id": "mountain-diet",
+      "label": "我有忌口",
+      "description": "不吃某些配料，想先确认能不能调整。",
+      "shopIds": ["banshan-tofu", "songfeng-tea"],
+      "starter": "我不吃葱和虾皮，想先确认哪里有能吃的。"
+    },
+    {
+      "id": "mountain-story",
+      "label": "想听山里的故事",
+      "description": "想了解豆腐、旧书或这座石阶镇的日常。",
+      "shopIds": ["banshan-tofu", "songfeng-tea"],
+      "starter": "给我讲一个这家店自己的故事。"
+    }
+  ],
+  "merchantSeeds": {
+    "banshan-tofu": {
+      "period": "近 7 天",
+      "summary": {
+        "conversations": 52,
+        "arrivalCards": 24,
+        "helpfulRate": 91,
+        "unresolved": 2
+      },
+      "questionClusters": [
+        { "label": "豆花几点卖完", "count": 18, "trend": 5, "example": "十一点去还有豆花吗？" },
+        { "label": "一个人怎么点", "count": 14, "trend": 3, "example": "一个人点套餐会不会多？" },
+        { "label": "忌口能不能调整", "count": 12, "trend": 4, "example": "不吃虾皮可以吗？" },
+        { "label": "下雨石阶好走吗", "count": 8, "trend": 2, "example": "拖行李箱能上去吗？" }
+      ],
+      "gaps": [
+        {
+          "id": "gap-tofu-highchair",
+          "question": "店里有儿童椅吗？带小小孩来方便吗？",
+          "occurrences": 5,
+          "firstSeen": "2026-11-02",
+          "status": "open",
+          "category": "亲子设施",
+          "exampleContext": "游客带一个两岁孩子，想先确认座位和热汤安全。"
+        },
+        {
+          "id": "gap-tofu-takeaway",
+          "question": "豆浆和豆花可以打包带走吗？",
+          "occurrences": 4,
+          "firstSeen": "2026-11-04",
+          "status": "open",
+          "category": "打包服务",
+          "exampleContext": "游客准备上山，想带一杯热豆浆。"
+        }
+      ],
+      "feedback": [
+        { "author": "阿池", "quote": "知道小桌可以一个人坐，点单顺序也清楚，进门没那么紧张。", "tag": "更敢进店" },
+        { "author": "小满", "quote": "提前知道周末九点会排队，我改到七点半。", "tag": "调整了时间" }
+      ],
+      "contentSeeds": [
+        {
+          "id": "tofu-content-01",
+          "type": "门口二维码卡",
+          "title": "一个人来，先点这一碗",
+          "angle": "用十三元热早餐解决第一次到店的犹豫，写清一人小桌和点单顺序。",
+          "sourceQuestions": ["一个人怎么点", "豆花几点卖完"]
+        },
+        {
+          "id": "tofu-content-02",
+          "type": "30 秒短视频脚本",
+          "title": "四点半泡豆，十一点翻牌",
+          "angle": "跟随盐卤点豆花的过程，讲清这家早餐铺为什么卖完就收。",
+          "sourceQuestions": ["豆花几点卖完"]
+        }
+      ]
+    },
+    "songfeng-tea": {
+      "period": "近 7 天",
+      "summary": {
+        "conversations": 47,
+        "arrivalCards": 21,
+        "helpfulRate": 95,
+        "unresolved": 2
+      },
+      "questionClusters": [
+        { "label": "能不能带书去看", "count": 16, "trend": 4, "example": "可以自己带书坐一下午吗？" },
+        { "label": "靠窗位怎么选", "count": 13, "trend": 3, "example": "一个人能坐窗边吗？" },
+        { "label": "能不能办公", "count": 9, "trend": 5, "example": "有 Wi-Fi 和插座吗？" },
+        { "label": "下雨怎么走", "count": 8, "trend": 2, "example": "从豆腐坊上来滑不滑？" }
+      ],
+      "gaps": [
+        {
+          "id": "gap-songfeng-wifi",
+          "question": "茶屋有 Wi-Fi 和插座吗？可以带电脑吗？",
+          "occurrences": 9,
+          "firstSeen": "2026-10-31",
+          "status": "open",
+          "category": "办公设施",
+          "exampleContext": "游客想一边喝茶一边写东西，但资料没有覆盖。"
+        },
+        {
+          "id": "gap-songfeng-luggage",
+          "question": "小行李箱可以放在店内吗？",
+          "occurrences": 3,
+          "firstSeen": "2026-11-03",
+          "status": "open",
+          "category": "便利服务",
+          "exampleContext": "游客从车站直接过来，担心门口空间窄。"
+        }
+      ],
+      "feedback": [
+        { "author": "白果", "quote": "它说窗边可以一个人坐、不会被催，我才决定停两个小时。", "tag": "停留更安心" }
+      ],
+      "contentSeeds": [
+        {
+          "id": "songfeng-content-01",
+          "type": "门口小黑板",
+          "title": "一个人来，可以只点一杯茶",
+          "angle": "直接回应独行游客对久坐、拼桌和最低消费的担心。",
+          "sourceQuestions": ["靠窗位怎么选", "能不能带书去看"]
+        },
+        {
+          "id": "songfeng-content-02",
+          "type": "30 秒短视频脚本",
+          "title": "为什么茶屋不播音乐",
+          "angle": "从窗外松风和翻书声切入，拍一杯茶如何让空间安静下来。",
+          "sourceQuestions": ["靠窗位怎么选"]
+        }
+      ]
+    }
+  }
+}

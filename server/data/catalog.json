@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "catalogVersion": "2.0.0",
+    "generatedAt": "2026-11-06T14:00:00+08:00",
+    "isFictional": true,
+    "displayNotice": "会客厅中的地区、小镇、店铺、人物、评论与体验回声均为虚构 Demo 数据。",
+    "language": "zh-CN",
+    "timezone": "Asia/Shanghai"
+  },
+  "regions": [
+    {
+      "id": "jiangnan",
+      "name": "江南水乡",
+      "shortName": "水乡",
+      "eyebrow": "地区 01",
+      "tagline": "茶烟、桥影与小店",
+      "description": "沿溪水展开的古镇。适合想慢慢走、坐下来，听店主讲一件小事的人。",
+      "travelContext": "古镇散步 · 独行友好 · 下午停留",
+      "accent": "water",
+      "status": "open",
+      "towns": [
+        {
+          "id": "yunxi",
+          "name": "云溪镇",
+          "subtitle": "桥西茶烟，南栅竹声",
+          "description": "一条溪水把镇子分成两岸。桥西有茶寮，河埠头有面馆，南栅还留着一间真正工作的竹编作坊。",
+          "dataFile": "yunxi.json",
+          "status": "open",
+          "tags": ["独行友好", "水乡小店", "地方故事"],
+          "heroNote": "三家店都写清了：一个人怎么坐、怎么点、什么时候去。",
+          "coverQuote": "一壶茶不催人。你坐着，屋檐外下雨也好，发呆也好。"
+        }
+      ]
+    },
+    {
+      "id": "mountain",
+      "name": "山野茶路",
+      "shortName": "山野",
+      "eyebrow": "地区 02",
+      "tagline": "石阶、豆香与松风",
+      "description": "从山脚小集慢慢走到半山腰。这里的店更早开门，也更早收摊。",
+      "travelContext": "山乡早市 · 手艺散步 · 短途停留",
+      "accent": "mountain",
+      "status": "open",
+      "towns": [
+        {
+          "id": "shiao",
+          "name": "石岙镇",
+          "subtitle": "一口热豆浆，半山松风",
+          "description": "山脚下的旧集市。清早先有豆香，午后才有茶烟；两间小店隔着一道石阶相望。",
+          "dataFile": "wuling.json",
+          "status": "open",
+          "tags": ["清早出发", "山乡早餐", "安静喝茶"],
+          "heroNote": "两间店连成一条半日路线：先吃热的，再带一杯茶上山。",
+          "coverQuote": "山里开店，不赶早，也不催晚。"
+        }
+      ]
+    },
+    {
+      "id": "coast",
+      "name": "海风渔村",
+      "shortName": "海风",
+      "eyebrow": "地区 03",
+      "tagline": "潮声、渔网与修船声",
+      "description": "沿海的小渔村正在整理店主资料。潮汐、营业和通行边界需要更多现场确认，暂不开放。",
+      "travelContext": "筹备中 · 潮汐小店 · 渔民故事",
+      "accent": "coast",
+      "status": "coming_soon",
+      "towns": [
+        {
+          "id": "chaowan",
+          "name": "潮湾镇",
+          "subtitle": "等潮水合适时再开门",
+          "description": "演示中的下一站。此处仅展示地区扩展结构，没有可进入的小店。",
+          "status": "coming_soon",
+          "tags": ["即将开放"],
+          "heroNote": "潮汐信息和店主授权仍未完成。",
+          "coverQuote": ""
+        }
+      ]
+    }
+  ]
+}

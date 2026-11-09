@@ -1,0 +1,946 @@
+{
+  "meta": {
+    "datasetVersion": "1.0.0",
+    "generatedAt": "2026-11-06T10:00:00+08:00",
+    "isFictional": true,
+    "displayNotice": "云溪镇、店铺、人物、评论与体验回声均为虚构 Demo 数据。",
+    "language": "zh-CN",
+    "timezone": "Asia/Shanghai"
+  },
+  "place": {
+    "id": "yunxi-town",
+    "name": "云溪镇",
+    "eyebrow": "虚构水乡地方志 00 号",
+    "region": "浙北水乡（架空）",
+    "seasonLabel": "十一月 · 深秋",
+    "intro": "一座被一条溪水分成两岸的小镇。桥西多茶烟，南栅多手艺，河埠头到了傍晚就慢下来。这里没有必须打卡的景点，只有几家愿意把门开着的小店。",
+    "tone": "安静、具体、不过度热情",
+    "principles": [
+      "先问今天想过得多热闹，再决定去哪。",
+      "推荐要说明适合谁、什么时候去，而不是只说“必去”。",
+      "游客不需要装成本地人，只需要知道如何礼貌地走进来。"
+    ],
+    "arrivalTips": [
+      "老街石板路雨后很滑，行李箱建议停在镇口游客服务点。",
+      "多数小店只收移动支付，少数也收现金，但不习惯议价。",
+      "周一部分手作店休整，出发前仍应向店铺确认当天安排。"
+    ],
+    "phrases": [
+      {
+        "phrase": "坐一歇",
+        "pronunciation": "zuò yī xiē",
+        "meaning": "先坐一会儿，不着急。"
+      },
+      {
+        "phrase": "添点水",
+        "pronunciation": "tiān diǎn shuǐ",
+        "meaning": "再加一点热水。"
+      },
+      {
+        "phrase": "慢点走",
+        "pronunciation": "màn diǎn zǒu",
+        "meaning": "一句很像本地人的道别。"
+      }
+    ],
+    "tags": ["独行友好", "水乡小店", "地方故事", "慢节奏"],
+    "routes": [
+      {
+        "name": "一条一个人也能走完的下午",
+        "stops": ["桥西茶寮", "南栅竹编所", "河埠头"],
+        "duration": "2.5–3 小时",
+        "note": "不赶路，每家只做一件事。"
+      },
+      {
+        "name": "雨天不提行李的短路线",
+        "stops": ["阿沅面馆", "桥西茶寮"],
+        "duration": "1.5–2 小时",
+        "note": "两处相距约 6 分钟，茶寮可坐久一些。"
+      }
+    ]
+  },
+  "shops": [
+    {
+      "id": "qiaoxi-tea",
+      "number": "01",
+      "name": "桥西茶寮",
+      "englishName": "QIAOXI TEA ROOM",
+      "category": "炭焙茶 · 茶点",
+      "stamp": "桥西",
+      "tagline": "一杯茶，坐到雨停。",
+      "shortDescription": "开在旧桥西头的小茶寮。吧台留了六个单人位，工作日下午最安静。",
+      "owner": {
+        "name": "沈岚",
+        "role": "店主",
+        "since": "2017 年",
+        "voice": "话不多，但愿意讲茶和这座桥。"
+      },
+      "address": "云溪镇桥西街 17 号，石拱桥西侧第三间木门",
+      "area": "桥西街",
+      "hours": {
+        "display": "周二至周日 10:00–19:30",
+        "closed": "周一休；节假日安排以店主当天说明为准",
+        "soloFriendly": "工作日 14:00–17:00 最安静",
+        "busy": "周末 15:00 后靠窗位较紧张",
+        "note": "18:30 后通常不再制作茶点"
+      },
+      "story": "沈岚把外婆留下的旧茶匾挂在吧台后。茶寮不追求一整套茶席，只把三款茶和几样小点做稳。她说，茶寮不是让人“体验生活”的地方，是让走累的人真的坐一歇。",
+      "storyQuote": "“一壶茶不催人。你坐着，屋檐外下雨也好，发呆也好。”",
+      "products": [
+        {
+          "name": "云溪烘青",
+          "price": 18,
+          "unit": "杯",
+          "note": "清香偏甜，可续一次热水。",
+          "signature": true
+        },
+        {
+          "name": "桂花米浆",
+          "price": 12,
+          "unit": "碗",
+          "note": "温热，微甜；下午四点后可能售完。"
+        },
+        {
+          "name": "茶点三拼",
+          "price": 22,
+          "unit": "份",
+          "note": "云片糕、烘豆、当季果干。"
+        },
+        {
+          "name": "笋干素面",
+          "price": 26,
+          "unit": "碗",
+          "note": "只有午市到 14:00 供应。"
+        }
+      ],
+      "signatureChoice": {
+        "soloOrder": "云溪烘青一杯 + 茶点三拼",
+        "budget": 40,
+        "reason": "不甜腻，也不需要一次点很多；一个人坐一小时刚好。",
+        "alternative": "不喝茶时，可以点桂花米浆和一份茶点。"
+      },
+      "solo": {
+        "counterSeats": 6,
+        "seating": "进门右手吧台是单人位；靠窗两张小桌也可一人坐。",
+        "bestTime": "周二至周五 14:00–17:00",
+        "comfortNote": "不需要拼桌，点一杯茶可以坐约 90 分钟。",
+        "avoid": "周末 15:00 后和雨天傍晚，店里会更满。"
+      },
+      "ordering": "先找座位，再到吧台看木牌点单并付款。茶会送到座位。",
+      "etiquette": [
+        "吧台是安静位，长时间视频通话请到门外。",
+        "茶点不打包上桥，桥上风大。",
+        "拍照可以，但不要拍正在休息的客人。"
+      ],
+      "commonMisunderstandings": [
+        {
+          "claim": "这里是不是有围炉煮茶和茶艺表演？",
+          "correction": "没有。日常只有杯泡茶和简单茶点，也不设表演时段。"
+        },
+        {
+          "claim": "只点一杯茶会不会不好意思？",
+          "correction": "不会。单人吧台就是给一杯茶坐一歇准备的，通常可坐约 90 分钟。"
+        },
+        {
+          "claim": "能不能提前订靠窗位？",
+          "correction": "店主资料里没有预订座位服务；目前是到店自行找座。"
+        }
+      ],
+      "ownerQuestions": [
+        "为什么三款茶里最推荐烘青？",
+        "茶寮为什么留一整排单人吧台？",
+        "旧桥的哪一段最适合看雨？"
+      ],
+      "ownerWillNotAnswer": [
+        "不判断古玩和茶具的收藏价值。",
+        "不承诺未列在菜单上的价格。",
+        "不评价其他店铺的出品好坏。"
+      ],
+      "petPolicy": "不接待宠物入内，导盲犬等工作犬除外。",
+      "accessibility": "门口有一级约 12 厘米台阶，店内通道较窄。",
+      "payment": "移动支付、现金均可。",
+      "services": {
+        "wifi": null,
+        "power": null,
+        "luggage": null
+      },
+      "faqs": [
+        {
+          "id": "tea-alone",
+          "question": "一个人来可以坐哪里？",
+          "answer": "吧台有 6 个单人位，工作日 14:00–17:00 最安静，不需要拼桌。",
+          "source": "店主提供"
+        },
+        {
+          "id": "tea-order",
+          "question": "第一次来怎么点？",
+          "answer": "建议云溪烘青一杯加茶点三拼，共 40 元；不喝茶可选桂花米浆。",
+          "source": "店主提供"
+        },
+        {
+          "id": "tea-duration",
+          "question": "一杯茶能坐多久？",
+          "answer": "通常可以坐约 90 分钟；周末和客流高峰时请以现场安排为准。",
+          "source": "店主提供"
+        }
+      ],
+      "recommendations": [
+        {
+          "shopId": "ayuan-noodles",
+          "reason": "如果还没吃午饭，阿沅面馆的三款面更合适；13:30 前到。",
+          "context": "适合想吃热食、预算 30 元以内的人。",
+          "source": "店主提供"
+        },
+        {
+          "shopId": "nanzha-bamboo",
+          "reason": "喝完茶可以慢慢走到南栅看竹编，店主阿岚自己买竹篮也去那里。",
+          "context": "适合不赶时间、对老手艺好奇的人。",
+          "source": "店主提供"
+        }
+      ],
+      "testimonials": [
+        {
+          "id": "tea-review-01",
+          "author": "小穗",
+          "context": "第一次独自来 · 工作日下午",
+          "quote": "我原本在门口犹豫，知道吧台能一个人坐、点一杯茶也不会被催，才敢进去。",
+          "changedAction": "选择吧台就座，停留 70 分钟。",
+          "simulated": true
+        },
+        {
+          "id": "tea-review-02",
+          "author": "木木",
+          "context": "雨天 · 只想坐一会儿",
+          "quote": "到店卡把“先找座、再去吧台点单”写清楚了，进门没有站在中间四处找店员。",
+          "changedAction": "按顺序点单，没有反复询问。",
+          "simulated": true
+        },
+        {
+          "id": "tea-review-03",
+          "author": "阿屿",
+          "context": "周末下午 · 一个人",
+          "quote": "体验回声说周末三点后会满，我改成了上午去，确实安静很多。",
+          "changedAction": "调整到上午 11 点到店。",
+          "simulated": true
+        }
+      ],
+      "accent": "tea",
+      "motif": "桥与水纹",
+      "liveStatus": {
+        "business": { "state": "open", "label": "营业中" },
+        "crowd": { "state": "limited", "label": "余位较少" },
+        "stock": { "state": "partial", "label": "茶点三拼售罄" },
+        "updatedAt": "今天 14:10 更新"
+      },
+      "lastUpdated": "2026-11-05"
+    },
+    {
+      "id": "ayuan-noodles",
+      "number": "02",
+      "name": "阿沅面馆",
+      "englishName": "AYUAN NOODLES",
+      "category": "笋干面 · 家常小馆",
+      "stamp": "阿沅",
+      "tagline": "只做三碗面，卖完收门。",
+      "shortDescription": "河埠头边开了十六年的面馆。午市最忙，但窗边留了六个吃面不用拼桌的小位。",
+      "owner": {
+        "name": "阿沅",
+        "role": "店主",
+        "since": "2010 年",
+        "voice": "爽快直接，会提醒你面要趁热吃。"
+      },
+      "address": "云溪镇河埠头 5 号，老邮局斜对面",
+      "area": "河埠头",
+      "hours": {
+        "display": "周三至周一 06:30–13:30",
+        "closed": "周二休；卖完提前收门",
+        "soloFriendly": "10:30 前和 12:50 后更容易找到单人位",
+        "busy": "周末 11:20–12:30 排队最明显",
+        "note": "只做早市和午市，不供应晚餐"
+      },
+      "story": "阿沅每天五点半熬笋干汤底。菜单十几年没有扩成一大张，只留雪菜肉丝、笋干肉丝和酱鸭三碗。她说面馆不是让人研究选择的地方，饿的时候，吃一碗就对了。",
+      "storyQuote": "“三碗够了。汤熬得对，客人会自己回来。”",
+      "products": [
+        {
+          "name": "笋干肉丝面",
+          "price": 22,
+          "unit": "碗",
+          "note": "店里的第一碗，汤底偏鲜。",
+          "signature": true
+        },
+        {
+          "name": "雪菜肉丝面",
+          "price": 20,
+          "unit": "碗",
+          "note": "口味更清爽。"
+        },
+        {
+          "name": "酱鸭面",
+          "price": 28,
+          "unit": "碗",
+          "note": "偏甜咸，每天数量有限。"
+        },
+        {
+          "name": "加荷包蛋",
+          "price": 3,
+          "unit": "个",
+          "note": "可以选择全熟。"
+        }
+      ],
+      "signatureChoice": {
+        "soloOrder": "小份笋干肉丝面 + 荷包蛋",
+        "budget": 25,
+        "reason": "能吃到招牌汤底，又不会因为分量太大吃得太赶。",
+        "alternative": "想清淡一点可换成小份雪菜肉丝面。"
+      },
+      "solo": {
+        "counterSeats": 6,
+        "seating": "进门左边沿窗有六个单人小位，不用面对面拼桌。",
+        "bestTime": "工作日 10:30 前或 12:50 后",
+        "comfortNote": "先看黑板点面，前台付款后会叫号，不必一直站着等。",
+        "avoid": "周末 11:20–12:30 排队最明显。"
+      },
+      "ordering": "进门先看墙上的黑板，到前台报面名并付款，领号码牌后等叫号。",
+      "etiquette": [
+        "不要替别人占座；人多时一人只能占一个位。",
+        "需要少盐或少辣要在点单时说明。",
+        "面趁热吃，不建议打包隔夜。"
+      ],
+      "commonMisunderstandings": [
+        {
+          "claim": "是不是有很多浇头可以自由搭配？",
+          "correction": "不是。只有三款面，可以加荷包蛋，不做自助浇头。"
+        },
+        {
+          "claim": "晚上还开吗？",
+          "correction": "不供应晚餐，通常 13:30 前收门，卖完会提前结束。"
+        },
+        {
+          "claim": "小份是不是只少面，不保证配料？",
+          "correction": "小份仍保留同样的招牌配料，只是面量减少。"
+        }
+      ],
+      "ownerQuestions": [
+        "汤底为什么要从五点半开始熬？",
+        "这三碗面里，本地人最常点哪一碗？",
+        "为什么店里只留三款面？"
+      ],
+      "ownerWillNotAnswer": [
+        "不承诺当天卖完后的补货时间。",
+        "不提供外卖配送范围。",
+        "不评价其他面馆。"
+      ],
+      "petPolicy": "不接待宠物入内，门外可短暂等位。",
+      "accessibility": "门口平地可进入，内部桌距较紧。",
+      "payment": "移动支付、现金均可。",
+      "services": {
+        "wifi": null,
+        "power": null,
+        "luggage": null
+      },
+      "faqs": [
+        {
+          "id": "noodle-alone",
+          "question": "一个人来坐哪里？",
+          "answer": "沿窗有 6 个单人小位，工作日 10:30 前或 12:50 后更容易找到。",
+          "source": "店主提供"
+        },
+        {
+          "id": "noodle-order",
+          "question": "第一次来点什么？",
+          "answer": "小份笋干肉丝面加荷包蛋，共 25 元；想清淡可选雪菜肉丝面。",
+          "source": "店主提供"
+        },
+        {
+          "id": "noodle-time",
+          "question": "营业到几点？",
+          "answer": "通常 06:30–13:30，周二休；卖完会提前收门，不供应晚餐。",
+          "source": "店主提供"
+        }
+      ],
+      "recommendations": [
+        {
+          "shopId": "qiaoxi-tea",
+          "reason": "吃完面沿河走到桥西茶寮约 6 分钟，下午可以坐一歇。",
+          "context": "适合午饭后不想立刻赶路的人。",
+          "source": "店主提供"
+        },
+        {
+          "shopId": "nanzha-bamboo",
+          "reason": "如果对老手艺感兴趣，南栅竹编所下午人少，可以看师傅修竹篮。",
+          "context": "适合愿意慢慢看、不赶时间的人。",
+          "source": "店主提供"
+        }
+      ],
+      "testimonials": [
+        {
+          "id": "noodle-review-01",
+          "author": "简宁",
+          "context": "第一次来 · 一个人吃午饭",
+          "quote": "最有用的是告诉我有小份，而且窗边有单人位。原本怕点多了吃不完。",
+          "changedAction": "点了小份笋干面加蛋。",
+          "simulated": true
+        },
+        {
+          "id": "noodle-review-02",
+          "author": "洛洛",
+          "context": "周末中午 · 赶车",
+          "quote": "它直接说周末十一点半会排很久，我改在十点四十到，吃完刚好赶车。",
+          "changedAction": "提前一小时到店。",
+          "simulated": true
+        }
+      ],
+      "accent": "noodle",
+      "motif": "面汤涟漪",
+      "liveStatus": {
+        "business": { "state": "open", "label": "营业中" },
+        "crowd": { "state": "full", "label": "午市满座" },
+        "stock": { "state": "partial", "label": "酱鸭面售罄" },
+        "updatedAt": "今天 14:10 更新"
+      },
+      "lastUpdated": "2026-11-05"
+    },
+    {
+      "id": "nanzha-bamboo",
+      "number": "03",
+      "name": "南栅竹编所",
+      "englishName": "NANZHA BAMBOO ATELIER",
+      "category": "竹编 · 修补 · 手作",
+      "stamp": "南栅",
+      "tagline": "先看手怎么动，再决定带什么走。",
+      "shortDescription": "父女俩守着的竹编作坊。不是展馆，工作台上每天都真的有人在修篮子。",
+      "owner": {
+        "name": "周守义与周禾",
+        "role": "父女 · 手艺人",
+        "since": "周守义做竹编四十余年",
+        "voice": "父亲讲工序，女儿讲使用和保养。"
+      },
+      "address": "云溪镇南栅巷 9 号，白墙院门内",
+      "area": "南栅巷",
+      "hours": {
+        "display": "周三至周日 09:30–17:00",
+        "closed": "周一、周二整理材料，不接待参观",
+        "soloFriendly": "工作日 10:00–11:30 最从容",
+        "busy": "周末偶尔有学校手作团，声音会更热闹",
+        "note": "最后入内时间通常为 16:30"
+      },
+      "story": "周守义不只卖新竹篮，也修镇上人用了很多年的旧篮。女儿周禾把每一件器物适合装什么写在小纸签上。这里没有“非遗表演”，只有工作台、竹丝和做到一半的手。",
+      "storyQuote": "“篮子不是摆着看的，手一提，才知道顺不顺。”",
+      "products": [
+        {
+          "name": "竹编杯垫",
+          "price": 18,
+          "unit": "片",
+          "note": "适合作为轻便小礼物。",
+          "signature": true
+        },
+        {
+          "name": "手掌竹篮",
+          "price": 86,
+          "unit": "只",
+          "note": "可放钥匙、茶叶或小水果。"
+        },
+        {
+          "name": "提梁茶篮",
+          "price": 260,
+          "unit": "只",
+          "note": "现场数量不固定，以当日陈列为准。"
+        },
+        {
+          "name": "旧竹器修补",
+          "price": null,
+          "unit": "",
+          "note": "需看器物情况现场估价，不作远程报价。"
+        }
+      ],
+      "signatureChoice": {
+        "soloOrder": "先看十分钟工作台，再选一片竹编杯垫",
+        "budget": 18,
+        "reason": "预算轻、携带方便，也能留下一次真实的手艺记忆。",
+        "alternative": "不买东西也可以参观，先问一句“今天方便看一会儿吗？”"
+      },
+      "solo": {
+        "counterSeats": 0,
+        "seating": "院内有一条长凳可短暂休息；这里不是茶馆或咖啡馆。",
+        "bestTime": "工作日 10:00–11:30",
+        "comfortNote": "一个人看 15–20 分钟正合适，遇到人少时周禾愿意多讲两句。",
+        "avoid": "周一、周二不接待；周末手作团到访时会比较拥挤。"
+      },
+      "ordering": "无需点单。参观先在院门口轻声招呼；购买直接询问工作台旁的周禾。",
+      "etiquette": [
+        "先问再拍摄，尤其不要对着顾客的旧物拍。",
+        "不要触碰刀具、竹丝和做到一半的器物。",
+        "旧物修补只做现场估价，不承接“鉴定真假”。"
+      ],
+      "commonMisunderstandings": [
+        {
+          "claim": "这里是不是有定时讲解或非遗表演？",
+          "correction": "没有固定表演。这里是正在工作的作坊，能否多讲要看当天手头活计。"
+        },
+        {
+          "claim": "所有商品都可以马上买到吗？",
+          "correction": "不是。现场陈列数量有限，提梁茶篮等以当日实际为准。"
+        },
+        {
+          "claim": "旧竹篮拿来就能报个价吗？",
+          "correction": "需要现场看器物情况后估价，不能只凭照片承诺价格。"
+        }
+      ],
+      "ownerQuestions": [
+        "一个竹篮最容易坏在哪里？",
+        "修补旧篮和做一个新篮，哪件事更花时间？",
+        "怎么判断一只竹篮适不适合日常使用？"
+      ],
+      "ownerWillNotAnswer": [
+        "不鉴定古董和收藏品。",
+        "不根据照片承诺修补价格。",
+        "不保证所有商品现场都有货。"
+      ],
+      "petPolicy": "店主资料未写明宠物政策，需出发前向店铺确认。",
+      "accessibility": "院门较窄，作坊内部有低门槛，轮椅通行需提前确认。",
+      "payment": "移动支付、现金均可。",
+      "services": {
+        "wifi": null,
+        "power": null,
+        "luggage": null
+      },
+      "faqs": [
+        {
+          "id": "bamboo-alone",
+          "question": "一个人去会尴尬吗？",
+          "answer": "不会。通常看 15–20 分钟最合适，先轻声问能否参观，不需要购买。",
+          "source": "店主提供"
+        },
+        {
+          "id": "bamboo-photo",
+          "question": "可以拍照吗？",
+          "answer": "可以，但请先询问；不要拍摄工具、未完成器物或不愿入镜的顾客。",
+          "source": "店主提供"
+        },
+        {
+          "id": "bamboo-hours",
+          "question": "什么时候开放？",
+          "answer": "周三至周日 09:30–17:00，周一、周二不接待；最后入内通常 16:30。",
+          "source": "店主提供"
+        }
+      ],
+      "recommendations": [
+        {
+          "shopId": "qiaoxi-tea",
+          "reason": "看完竹编沿南栅巷走回桥西茶寮，适合让脚和脑子都慢下来。",
+          "context": "适合想坐下来整理照片、写两句旅行笔记的人。",
+          "source": "店主提供"
+        },
+        {
+          "shopId": "ayuan-noodles",
+          "reason": "如果上午来，11 点前离开竹编所，走到阿沅面馆还能避开最挤的午饭时段。",
+          "context": "适合还没吃午饭、想吃热汤面的人。",
+          "source": "店主提供"
+        }
+      ],
+      "testimonials": [
+        {
+          "id": "bamboo-review-01",
+          "author": "林一",
+          "context": "独自旅行 · 对手艺好奇",
+          "quote": "原来不是展馆。卡上提醒先问再拍照，进去后没有觉得自己在打断别人干活。",
+          "changedAction": "先询问参观，再安静看周师傅修篮。",
+          "simulated": true
+        },
+        {
+          "id": "bamboo-review-02",
+          "author": "南枝",
+          "context": "预算有限 · 不想乱买东西",
+          "quote": "它直接告诉我十八元的杯垫就是合适的轻礼物，没有把贵的东西说成必须买。",
+          "changedAction": "选择杯垫，参观 18 分钟离店。",
+          "simulated": true
+        }
+      ],
+      "accent": "bamboo",
+      "motif": "竹丝与方格",
+      "liveStatus": {
+        "business": { "state": "open", "label": "营业中" },
+        "crowd": { "state": "available", "label": "无需排队" },
+        "stock": { "state": "available", "label": "杯垫有货" },
+        "updatedAt": "今天 14:10 更新"
+      },
+      "lastUpdated": "2026-11-05"
+    }
+  ],
+  "visitorScenarios": [
+    {
+      "id": "first-time",
+      "label": "我第一次来",
+      "description": "适合第一次到云溪镇、想先弄明白怎么走进一家店的人。",
+      "shopIds": ["qiaoxi-tea", "ayuan-noodles", "nanzha-bamboo"],
+      "starter": "我第一次来，想先了解这里最适合怎么逛。"
+    },
+    {
+      "id": "solo",
+      "label": "我一个人",
+      "description": "关心单人座位、点单分量、会不会尴尬。",
+      "shopIds": ["qiaoxi-tea", "ayuan-noodles", "nanzha-bamboo"],
+      "starter": "我一个人来，坐在哪里、怎么点会自然一点？"
+    },
+    {
+      "id": "rainy",
+      "label": "下雨了",
+      "description": "希望有不必拖着行李、能坐一会儿的短路线。",
+      "shopIds": ["qiaoxi-tea", "ayuan-noodles"],
+      "starter": "现在下雨了，我只想找地方坐一会儿，应该怎么安排？"
+    },
+    {
+      "id": "quick-lunch",
+      "label": "想吃碗热的",
+      "description": "预算有限，赶时间，也不想点错分量。",
+      "shopIds": ["ayuan-noodles"],
+      "starter": "我想快速吃一碗热的，预算三十元以内，怎么点？"
+    },
+    {
+      "id": "quiet",
+      "label": "想安静待着",
+      "description": "不想社交太久，只需要一个不赶人的座位。",
+      "shopIds": ["qiaoxi-tea"],
+      "starter": "我想安静坐一个小时，不想被一直招呼，可以怎么安排？"
+    },
+    {
+      "id": "gift",
+      "label": "想带个小东西走",
+      "description": "预算不超过一百元，想买不占地方的地方手艺。",
+      "shopIds": ["nanzha-bamboo"],
+      "starter": "我想带一个轻便的小礼物，预算一百元以内，有什么选择？"
+    },
+    {
+      "id": "owner-recommendation",
+      "label": "想听店主推荐",
+      "description": "不追求全城攻略，只问这家店主自己愿意推荐哪里。",
+      "shopIds": ["qiaoxi-tea", "ayuan-noodles", "nanzha-bamboo"],
+      "starter": "如果只按店主自己的偏好，附近下一站最值得去哪里？"
+    },
+    {
+      "id": "story",
+      "label": "想听一个家乡故事",
+      "description": "想知道店里一件旧物、一道食物或一门手艺背后的缘由。",
+      "shopIds": ["qiaoxi-tea", "ayuan-noodles", "nanzha-bamboo"],
+      "starter": "给我讲一个这家店自己的故事。"
+    },
+    {
+      "id": "pet",
+      "label": "我带着宠物",
+      "description": "先确认能否入内，避免到门口才被拒绝。",
+      "shopIds": ["qiaoxi-tea", "ayuan-noodles", "nanzha-bamboo"],
+      "starter": "我带着宠物，可以进店吗？"
+    },
+    {
+      "id": "luggage",
+      "label": "我拖着行李",
+      "description": "想了解门口台阶、能否寄存、哪家更适合短暂停留。",
+      "shopIds": ["qiaoxi-tea", "ayuan-noodles", "nanzha-bamboo"],
+      "starter": "我拖着行李箱，进店方便吗？有地方寄存吗？"
+    },
+    {
+      "id": "photo",
+      "label": "我想拍照",
+      "description": "想确认拍照礼仪，不打扰店主和顾客。",
+      "shopIds": ["nanzha-bamboo", "qiaoxi-tea"],
+      "starter": "我想拍一些照片，有什么需要注意的礼仪？"
+    },
+    {
+      "id": "gap-wifi",
+      "label": "我有工作要处理",
+      "description": "想找 Wi-Fi、插座和适不适合打开电脑的位置。",
+      "shopIds": ["qiaoxi-tea"],
+      "starter": "店里有 Wi-Fi 和插座吗？我能不能带电脑坐一会儿？"
+    }
+  ],
+  "merchantSeeds": {
+    "qiaoxi-tea": {
+      "period": "近 7 天",
+      "summary": {
+        "conversations": 86,
+        "arrivalCards": 41,
+        "helpfulRate": 92,
+        "unresolved": 2
+      },
+      "questionClusters": [
+        {
+          "label": "一个人怎么坐",
+          "count": 28,
+          "trend": 6,
+          "example": "吧台能不能一个人坐？"
+        },
+        {
+          "label": "第一次点什么",
+          "count": 22,
+          "trend": 4,
+          "example": "一个人喝茶点什么不尴尬？"
+        },
+        {
+          "label": "什么时候最安静",
+          "count": 17,
+          "trend": 3,
+          "example": "下午三点会不会很多人？"
+        },
+        {
+          "label": "附近还能去哪",
+          "count": 11,
+          "trend": 2,
+          "example": "喝完茶下一站去哪里比较顺路？"
+        }
+      ],
+      "gaps": [
+        {
+          "id": "gap-tea-wifi",
+          "question": "店里有 Wi-Fi 和插座吗？适合带电脑吗？",
+          "occurrences": 7,
+          "firstSeen": "2026-11-01",
+          "status": "open",
+          "category": "办公设施",
+          "exampleContext": "游客想坐两小时处理工作，但资料里没有 Wi-Fi、插座和电脑使用说明。"
+        },
+        {
+          "id": "gap-tea-luggage",
+          "question": "行李箱可以暂放在店里吗？",
+          "occurrences": 4,
+          "firstSeen": "2026-11-03",
+          "status": "open",
+          "category": "便利服务",
+          "exampleContext": "游客从车站直接来，担心台阶和占通道。"
+        },
+        {
+          "id": "gap-tea-invoice",
+          "question": "可以开发票吗？",
+          "occurrences": 3,
+          "firstSeen": "2026-11-04",
+          "status": "open",
+          "category": "付款服务",
+          "exampleContext": "游客需要报销凭证，但店主资料里还没有写发票规则。"
+        },
+        {
+          "id": "gap-tea-contact",
+          "question": "临时休息或售罄时，有公开电话可以确认吗？",
+          "occurrences": 2,
+          "firstSeen": "2026-11-05",
+          "status": "open",
+          "category": "联系信息",
+          "exampleContext": "游客准备专程前往，担心临时收门，但店主尚未公开联系电话。"
+        }
+      ],
+      "feedback": [
+        {
+          "author": "小穗",
+          "quote": "知道吧台能一个人坐、点一杯茶也不会被催，才敢进去。",
+          "tag": "更敢进店"
+        },
+        {
+          "author": "木木",
+          "quote": "先找座再去吧台点单，进门没有站在中间四处找店员。",
+          "tag": "行动更清楚"
+        },
+        {
+          "author": "阿屿",
+          "quote": "本来想周末三点去，看到提醒后改到上午，体验安静很多。",
+          "tag": "调整了时间"
+        }
+      ],
+      "contentSeeds": [
+        {
+          "id": "tea-content-01",
+          "type": "门口二维码卡",
+          "title": "第一次来，建议这样点",
+          "angle": "用真实高频问题回答第一次来的人：一杯烘青、一份三拼，吧台一个人也能坐。",
+          "sourceQuestions": ["第一次点什么", "一个人怎么坐"]
+        },
+        {
+          "id": "tea-content-02",
+          "type": "30 秒短视频脚本",
+          "title": "为什么这间茶寮留了一整排单人位",
+          "angle": "从沈岚留下单人吧台的缘由切入，不拍摆拍茶艺，镜头只拍人真实坐下来的动作。",
+          "sourceQuestions": ["什么时候最安静", "一个人怎么坐"]
+        },
+        {
+          "id": "tea-content-03",
+          "type": "门口小黑板",
+          "title": "老板最想解释的一件误会",
+          "angle": "这里没有茶艺表演，也不是围炉煮茶。一杯茶，坐一歇，就是全部。",
+          "sourceQuestions": ["第一次点什么"]
+        }
+      ]
+    },
+    "ayuan-noodles": {
+      "period": "近 7 天",
+      "summary": {
+        "conversations": 73,
+        "arrivalCards": 38,
+        "helpfulRate": 89,
+        "unresolved": 2
+      },
+      "questionClusters": [
+        {
+          "label": "小份够不够吃",
+          "count": 25,
+          "trend": 7,
+          "example": "一个人小份会不会太少？"
+        },
+        {
+          "label": "三碗面怎么选",
+          "count": 21,
+          "trend": 5,
+          "example": "第一次来选哪一碗？"
+        },
+        {
+          "label": "排队与营业时间",
+          "count": 18,
+          "trend": 2,
+          "example": "中午几点来不用排太久？"
+        },
+        {
+          "label": "能否带宠物",
+          "count": 8,
+          "trend": -1,
+          "example": "带小狗可以进去吗？"
+        }
+      ],
+      "gaps": [
+        {
+          "id": "gap-noodle-refill",
+          "question": "吃完小份如果不够，可以再加一点面吗？",
+          "occurrences": 5,
+          "firstSeen": "2026-11-02",
+          "status": "open",
+          "category": "加餐规则",
+          "exampleContext": "小胃口游客先点小份，但不确定之后能不能单独加面。"
+        },
+        {
+          "id": "gap-noodle-receipt",
+          "question": "可以开发票吗？",
+          "occurrences": 3,
+          "firstSeen": "2026-11-04",
+          "status": "open",
+          "category": "付款服务",
+          "exampleContext": "出差游客询问报销凭证。"
+        }
+      ],
+      "feedback": [
+        {
+          "author": "简宁",
+          "quote": "最有用的是告诉我小份也能吃到完整配料，原来怕一个人点大份吃不完。",
+          "tag": "点单更确定"
+        },
+        {
+          "author": "洛洛",
+          "quote": "它直接说周末十一点半会排很久，我改在十点四十到，吃完刚好赶车。",
+          "tag": "避开高峰"
+        },
+        {
+          "author": "阿渡",
+          "quote": "不用猜先点单还是先找座位，卡片把顺序写得很明白。",
+          "tag": "减少犹豫"
+        }
+      ],
+      "contentSeeds": [
+        {
+          "id": "noodle-content-01",
+          "type": "门口二维码卡",
+          "title": "一个人来，点这一碗就好",
+          "angle": "用“小份也有完整配料”解决点单焦虑，写清价格和窗口单人位。",
+          "sourceQuestions": ["小份够不够吃", "三碗面怎么选"]
+        },
+        {
+          "id": "noodle-content-02",
+          "type": "30 秒短视频脚本",
+          "title": "五点半的笋干汤底",
+          "angle": "跟随阿沅开火、下笋干、熬汤，旁白只讲三碗面为什么够了。",
+          "sourceQuestions": ["三碗面怎么选"]
+        }
+      ]
+    },
+    "nanzha-bamboo": {
+      "period": "近 7 天",
+      "summary": {
+        "conversations": 64,
+        "arrivalCards": 29,
+        "helpfulRate": 94,
+        "unresolved": 3
+      },
+      "questionClusters": [
+        {
+          "label": "需要预约吗",
+          "count": 19,
+          "trend": 4,
+          "example": "一个人直接进去能看吗？"
+        },
+        {
+          "label": "可以拍照吗",
+          "count": 17,
+          "trend": 6,
+          "example": "能拍师傅工作吗？"
+        },
+        {
+          "label": "买什么轻便",
+          "count": 15,
+          "trend": 3,
+          "example": "预算五十元以内带什么走？"
+        },
+        {
+          "label": "旧竹器能否修",
+          "count": 9,
+          "trend": 1,
+          "example": "外婆留下的篮子裂了还能修吗？"
+        }
+      ],
+      "gaps": [
+        {
+          "id": "gap-bamboo-restroom",
+          "question": "作坊里有洗手间吗？附近最近的公共洗手间在哪？",
+          "occurrences": 8,
+          "firstSeen": "2026-10-31",
+          "status": "open",
+          "category": "便利服务",
+          "exampleContext": "游客准备在店内停留二十分钟，想先确认洗手间。"
+        },
+        {
+          "id": "gap-bamboo-pet",
+          "question": "可以带宠物进院子吗？",
+          "occurrences": 4,
+          "firstSeen": "2026-11-03",
+          "status": "open",
+          "category": "宠物政策",
+          "exampleContext": "资料目前只写未确认，游客希望得到明确答案。"
+        }
+      ],
+      "feedback": [
+        {
+          "author": "林一",
+          "quote": "卡上提醒先问再拍照，进去后没有觉得自己在打断别人干活。",
+          "tag": "礼仪更清楚"
+        },
+        {
+          "author": "南枝",
+          "quote": "它没有把贵的东西说成必须买，十八元杯垫就是合适的轻礼物。",
+          "tag": "推荐更可信"
+        },
+        {
+          "author": "又青",
+          "quote": "知道周一周二不接待，少白跑了一趟。",
+          "tag": "避免落空"
+        }
+      ],
+      "contentSeeds": [
+        {
+          "id": "bamboo-content-01",
+          "type": "门口二维码卡",
+          "title": "不是展馆，是一间正在工作的作坊",
+          "angle": "用安静的参观礼仪回应“能不能拍照、需不需要预约、可以看多久”。",
+          "sourceQuestions": ["需要预约吗", "可以拍照吗"]
+        },
+        {
+          "id": "bamboo-content-02",
+          "type": "图文卡片",
+          "title": "一只竹篮最容易坏在哪里",
+          "angle": "从周守义修旧篮的工序切入，展示竹编不是纪念品，而是日用品。",
+          "sourceQuestions": ["旧竹器能否修"]
+        }
+      ]
+    }
+  }
+}

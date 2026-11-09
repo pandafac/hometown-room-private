@@ -1,0 +1,4 @@
+- [2026-11-07][KNOWLEDGE] Consolidated Demo 1.0 product context, upgrade guardrails, delivery architecture, known limitations, and project agent instructions @will/Codex | local
+- [2026-11-07][MIGRATION] Migrated Demo 1.0 source, data, docs, tests, build output, and sendable HTML deliverables from the C-drive visualization workspace to `D:\Guest's Home` @will/Codex | local
+- [2026-11-07][HANDOFF] Renamed the final patched delivery to Demo 4.0, archived its input HTML, synchronized build and verification paths, consolidated AI/data fixes, and documented the next-session handoff @will/Codex | local
+- [2026-11-08][LIBRARY] Inlined `html-to-image` 1.11.13 (MIT) into the standalone Demo so the first-visit card can be saved as a PNG without network access @will/Codex | local
